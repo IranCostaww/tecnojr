@@ -16,10 +16,6 @@ projeto/
     index.html (estrutura da pagina com cardapio e formulario)
     style.css (estilos, cores terrosas e responsividade)
     script.js (logica de envio do pedido e consulta)
-  design/
-    guia-figma.md (especificacoes de telas, cores e fontes)
-  comercial/
-    comercial.md (mensagem para Dona Marta, objecoes e estrategia)
   README.md (este manual)
 
 ## Dados de exemplo e onde trocar
