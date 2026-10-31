@@ -1,0 +1,450 @@
+/* variaveis com a paleta em tons de cafe e terra */
+:root {
+  --cor-fundo: #FBF8F3;
+  --cor-superficie: #FFFFFF;
+  --cor-card-fundo: #F4EDE4;
+  --cor-primaria: #4A2E1B;
+  --cor-secundaria: #8C5336;
+  --cor-destaque: #C47C48;
+  --cor-destaque-hover: #AA6534;
+  --cor-texto: #33261D;
+  --cor-texto-suave: #6B564A;
+  --cor-borda: #E4D8CB;
+  --cor-whatsapp: #2E6B4D;
+  --cor-whatsapp-hover: #24543D;
+  --cor-erro: #9E3A3A;
+  --cor-erro-fundo: #FBEAEA;
+  --cor-sucesso: #2C6B4B;
+  --cor-sucesso-fundo: #EAF5EE;
+
+  --fonte-titulo: 'Lora', serif;
+  --fonte-texto: 'Nunito', sans-serif;
+  --raio-borda: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* container para segurar a largura no celular e telas maiores */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* topo fixo com logo e botao rapido */
+.topo {
+  background-color: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-xicara {
+  width: 34px;
+  height: 34px;
+}
+
+.nome-loja {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--cor-primaria);
+}
+
+.btn-topo {
+  background-color: var(--cor-card-fundo);
+  color: var(--cor-primaria);
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: var(--raio-borda);
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid var(--cor-borda);
+}
+
+/* banner de apresentacao */
+.destaque {
+  padding: 36px 0 30px;
+  text-align: left;
+}
+
+.tag-aconchego {
+  display: inline-block;
+  background-color: var(--cor-card-fundo);
+  color: var(--cor-secundaria);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--cor-primaria);
+  margin-bottom: 14px;
+}
+
+.texto-destaque {
+  color: var(--cor-texto-suave);
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+.botoes-chamada {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* estilo base para botoes */
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 20px;
+  border-radius: var(--raio-borda);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-principal {
+  background-color: var(--cor-destaque);
+  color: #FFFFFF;
+}
+
+.btn-principal:hover {
+  background-color: var(--cor-destaque-hover);
+}
+
+.btn-whatsapp {
+  background-color: var(--cor-whatsapp);
+  color: #FFFFFF;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--cor-whatsapp-hover);
+}
+
+.btn-secundario {
+  background-color: var(--cor-primaria);
+  color: #FFFFFF;
+}
+
+.btn-secundario:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.btn-bloco {
+  width: 100%;
+}
+
+/* secoes de conteudo */
+.secao {
+  padding: 34px 0;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.titulo-secao {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  color: var(--cor-primaria);
+  margin-bottom: 6px;
+}
+
+.subtitulo-secao {
+  color: var(--cor-texto-suave);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* cards do cardapio */
+.grade-cardapio {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card-item {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 16px;
+}
+
+.destaque-card {
+  border-left: 5px solid var(--cor-destaque);
+}
+
+.especial-fim-de-ano {
+  border-left: 5px solid var(--cor-secundaria);
+  background-color: #FAF4EE;
+}
+
+.item-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.item-cabecalho h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 18px;
+  color: var(--cor-primaria);
+}
+
+.preco {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--cor-secundaria);
+  white-space: nowrap;
+}
+
+.card-item p {
+  color: var(--cor-texto-suave);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.aviso-pedido {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cor-destaque);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* informacoes de endereco e horario */
+.grade-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bloco-info {
+  background-color: var(--cor-card-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 16px;
+}
+
+.bloco-info h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 18px;
+  color: var(--cor-primaria);
+  margin-bottom: 6px;
+}
+
+.bloco-info p {
+  font-size: 15px;
+  color: var(--cor-texto);
+  margin-bottom: 6px;
+  white-space: pre-line;
+}
+
+.bloco-info small {
+  color: var(--cor-texto-suave);
+  font-size: 13px;
+  display: block;
+}
+
+/* formulario de encomenda */
+.caixa-formulario {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 22px 18px;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--cor-primaria);
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--raio-borda);
+  border: 1px solid var(--cor-borda);
+  font-family: var(--fonte-texto);
+  font-size: 15px;
+  background-color: #FAFAFA;
+  color: var(--cor-texto);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--cor-destaque);
+  background-color: #FFFFFF;
+}
+
+.mensagem-status {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: var(--raio-borda);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.mensagem-status.sucesso {
+  background-color: var(--cor-sucesso-fundo);
+  color: var(--cor-sucesso);
+  border: 1px solid #B8DEC6;
+}
+
+.mensagem-status.erro {
+  background-color: var(--cor-erro-fundo);
+  color: var(--cor-erro);
+  border: 1px solid #ECC4C4;
+}
+
+.escondido {
+  display: none;
+}
+
+/* painel simples da Dona Marta */
+.caixa-painel {
+  background-color: #F6F1EA;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 18px;
+}
+
+.caixa-painel h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+  margin-bottom: 6px;
+}
+
+.caixa-painel p {
+  font-size: 14px;
+  color: var(--cor-texto-suave);
+  margin-bottom: 12px;
+}
+
+.linha-busca {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.lista-encomendas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-encomenda-lista {
+  background-color: var(--cor-superficie);
+  padding: 12px;
+  border-radius: var(--raio-borda);
+  border: 1px solid var(--cor-borda);
+  font-size: 14px;
+}
+
+.item-encomenda-lista strong {
+  color: var(--cor-primaria);
+}
+
+.tag-status {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 4px;
+}
+
+.status-recebida {
+  background-color: #F7E7CD;
+  color: #7A5310;
+}
+
+.status-em-preparo {
+  background-color: #DCE8F7;
+  color: #21518C;
+}
+
+.status-entregue {
+  background-color: #D6ECD9;
+  color: #21612A;
+}
+
+.aviso-vazio {
+  font-size: 14px;
+  color: var(--cor-texto-suave);
+  font-style: italic;
+}
+
+/* rodape */
+.rodape {
+  background-color: var(--cor-primaria);
+  color: #E8DDD4;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.rodape-conteudo p {
+  margin-bottom: 4px;
+}
+
+/* ajuste para telas maiores que celular */
+@media (min-width: 650px) {
+  .botoes-chamada {
+    flex-direction: row;
+  }
+
+  .botoes-chamada .btn {
+    flex: 1;
+  }
+}

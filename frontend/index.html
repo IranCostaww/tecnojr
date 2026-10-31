@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café do Bairro - Bolos Caseiros e Café Quentinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- cabecalho simples com o logo desenhado do cafe -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <div class="marca">
+        <svg class="logo-xicara" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Desenho de xícara de café">
+          <path d="M10 18H34C34 28 29 34 22 34C15 34 10 28 10 18Z" stroke="#4A2E1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M34 21C38 21 41 23 41 26C41 29 38 31 34 31" stroke="#4A2E1B" stroke-width="3" stroke-linecap="round"/>
+          <path d="M7 38H37" stroke="#4A2E1B" stroke-width="3" stroke-linecap="round"/>
+          <path d="M17 10C17 13 15 14 15 16" stroke="#8C5336" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M23 9C23 12 21 13 21 16" stroke="#8C5336" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M29 10C29 13 27 14 27 16" stroke="#8C5336" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="nome-loja">Café do Bairro</span>
+      </div>
+      <a href="#encomenda" class="btn-topo">Encomendar</a>
+    </div>
+  </header>
+
+  <!-- apresentacao principal acolhedora -->
+  <section class="destaque">
+    <div class="container">
+      <span class="tag-aconchego">Aberto há 6 anos</span>
+      <h1>Café coado, pão de queijo e bolos caseiros por encomenda</h1>
+      <p class="texto-destaque">
+        A Dona Marta prepara bolos caseiros por encomenda e serve café fresquinho com pão de queijo quentinho no balcão.
+      </p>
+      <div class="botoes-chamada">
+        <a href="#encomenda" class="btn btn-principal">Fazer encomenda online</a>
+        <a id="link-whatsapp-destaque" href="#" target="_blank" rel="noopener" class="btn btn-whatsapp">Pedir pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- secao de cardapio com precos e detalhes -->
+  <section id="cardapio" class="secao cardapio">
+    <div class="container">
+      <h2 class="titulo-secao">Nosso Cardápio</h2>
+      <p class="subtitulo-secao">Feito todo dia com ingredientes frescos e café passado na hora.</p>
+
+      <div class="grade-cardapio">
+        <article class="card-item">
+          <div class="item-cabecalho">
+            <h3>Café Coado Tradicional</h3>
+            <span class="preco">R$ 5,00</span>
+          </div>
+          <p>Grãos selecionados da região, passado no filtro de pano na hora do pedido.</p>
+        </article>
+
+        <article class="card-item">
+          <div class="item-cabecalho">
+            <h3>Pão de Queijo da Canastra</h3>
+            <span class="preco">R$ 6,50</span>
+          </div>
+          <p>Receita mineira tradicional, casquinha crocante por fora e macio por dentro.</p>
+        </article>
+
+        <article class="card-item destaque-card">
+          <div class="item-cabecalho">
+            <h3>Bolo de Fubá com Goiabada</h3>
+            <span class="preco">R$ 38,00</span>
+          </div>
+          <p>Nosso clássico para o café da tarde. Fubá moído fino e pedaços generosos de goiabada.</p>
+          <span class="aviso-pedido">Feito por encomenda</span>
+        </article>
+
+        <article class="card-item destaque-card">
+          <div class="item-cabecalho">
+            <h3>Bolo de Cenoura com Chocolate</h3>
+            <span class="preco">R$ 42,00</span>
+          </div>
+          <p>Massa fofinha de cenoura fresca e cobertura cremosa de chocolate caseiro.</p>
+          <span class="aviso-pedido">Feito por encomenda</span>
+        </article>
+
+        <article class="card-item especial-fim-de-ano">
+          <div class="item-cabecalho">
+            <h3>Panetone Artesanal de Natal</h3>
+            <span class="preco">R$ 55,00</span>
+          </div>
+          <p>Fermentação lenta natural, recheado com frutas cristalizadas ou gotas de chocolate.</p>
+          <span class="aviso-pedido">Edição de fim de ano</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- secao de horario e localizacao -->
+  <section id="localizacao" class="secao informacoes">
+    <div class="container">
+      <h2 class="titulo-secao">Onde Estamos e Horários</h2>
+      <div class="grade-info">
+        <div class="bloco-info">
+          <h3>Horário de Funcionamento</h3>
+          <p id="texto-horario">Carregando horário...</p>
+          <small>Fornadas de pão de queijo saindo às 8h e às 15h.</small>
+        </div>
+
+        <div class="bloco-info">
+          <h3>Nosso Endereço</h3>
+          <p id="texto-endereco">Carregando endereço...</p>
+          <small>Pertinho da praça central, com mesas na calçada.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- formulario de encomenda que conecta na api -->
+  <section id="encomenda" class="secao secao-formulario">
+    <div class="container">
+      <div class="caixa-formulario">
+        <h2 class="titulo-secao">Reserve sua Encomenda</h2>
+        <p class="subtitulo-secao">
+          A Dona Marta faz no máximo 5 encomendas por dia para garantir a qualidade de cada receita. Garanta a sua data com antecedência.
+        </p>
+
+        <form id="form-encomenda">
+          <div class="campo">
+            <label for="cliente-nome">Seu nome completo</label>
+            <input type="text" id="cliente-nome" name="cliente_nome" placeholder="Ex: Maria Oliveira" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone com DDD (WhatsApp)</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Ex: (11) 98765-4321" required>
+          </div>
+
+          <div class="campo">
+            <label for="produto">Escolha o produto</label>
+            <select id="produto" name="produto" required>
+              <option value="">Selecione um bolo ou especial</option>
+              <option value="Bolo de Fubá com Goiabada">Bolo de Fubá com Goiabada - R$ 38,00</option>
+              <option value="Bolo de Cenoura com Chocolate">Bolo de Cenoura com Chocolate - R$ 42,00</option>
+              <option value="Bolo Caseiro de Laranja">Bolo Caseiro de Laranja - R$ 35,00</option>
+              <option value="Panetone Artesanal Tradicional">Panetone Artesanal Tradicional - R$ 55,00</option>
+              <option value="Panetone Artesanal de Chocolate">Panetone Artesanal de Chocolate - R$ 58,00</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="data-entrega">Data desejada de entrega</label>
+            <input type="date" id="data-entrega" name="data_entrega" required>
+          </div>
+
+          <button type="submit" id="btn-enviar-encomenda" class="btn btn-principal btn-bloco">Confirmar Encomenda</button>
+        </form>
+
+        <div id="mensagem-resposta" class="mensagem-status escondido"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- consulta rapida para a Dona Marta conferir o dia pelo celular -->
+  <section class="secao secao-painel">
+    <div class="container">
+      <div class="caixa-painel">
+        <h3>Consultar Encomendas do Dia</h3>
+        <p>Espaço para a Dona Marta ver rapidamente pelo celular as entregas agendadas para cada data.</p>
+        <div class="linha-busca">
+          <input type="date" id="data-consulta">
+          <button type="button" id="btn-consultar" class="btn btn-secundario">Ver dia</button>
+        </div>
+        <div id="lista-consulta" class="lista-encomendas">
+          <p class="aviso-vazio">Selecione uma data para conferir os pedidos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- rodape com contato -->
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>Café do Bairro - O carinho de sempre na mesa da sua casa.</p>
+      <p id="texto-telefone-rodape">Telefone: Carregando...</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
